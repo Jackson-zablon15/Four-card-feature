@@ -33,13 +33,12 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 66px;
+    gap: 53px;
 }
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
     max-width: 18.4375rem;
     font-size: 18px;
     margin-top: 4.1rem;
@@ -95,12 +94,12 @@ img{
     }
     .header{
         max-width: 31.625rem;
-        font-size: 1.875rem;
+        font-size: 2rem;
         margin-top: 5.3rem;     
         gap: 0.5rem;
     }
     .header p:last-of-type{
-        margin-top: 18px;
+        margin-top: 12px;
     }
     .container{
         display: grid;
