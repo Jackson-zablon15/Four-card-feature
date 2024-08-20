@@ -1,0 +1,133 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very_Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Very_Light_Gray: hsl(0, 0%, 98%);
+}
+
+@font-face {
+    font-family: Family;
+    src: url(./design/Poppins/Poppins-Light.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    display: block;
+}
+body{
+    font-family: Family;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Very_Light_Gray);
+}
+main{
+    max-width: 23.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 66px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    max-width: 18.4375rem;
+    font-size: 18px;
+    margin-top: 4.2375rem;
+   color: var(--Grayish_Blue);
+}
+.second{
+    color: var(--Very_Dark_Blue);
+    font-weight: 600;
+}
+
+.header p:last-of-type{
+    margin-top: 0.4875rem;
+    font-size: 15px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.container div{
+    max-width: 19.5625rem;
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border-top: 3px solid var(--Blue);
+    box-shadow: 0px 0px 20px var(--Grayish_Blue);
+}
+
+.top{
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--Very_Dark_Blue);
+}
+.down{
+    color: var(--Grayish_Blue);
+    font-size: 12px;
+}
+img{
+    display: block;
+    width: 60px;
+    align-self: end;
+    margin-top: 30px;
+}
+
+@media  only screen and (min-width:768px) {
+    main{
+        max-width: fit-content;
+    }
+    .header{
+        max-width: 31.625rem;
+        font-size: 1.875rem;
+        margin-top: 5.5rem;     
+        gap: 0.5rem;
+    }
+    .header p:last-of-type{
+        margin-top: 22px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        grid-template-areas: 
+            ".. top .."
+            "left top right"
+            "left bottom right"
+            ".. bottom ..";
+    }
+    .container div{
+        margin-top: 0px;
+        min-width: 21.875rem;
+        min-height: 15.9375rem;
+    }
+    .container > div:first-child{
+        grid-area: left;
+    }
+    .container > div:nth-child(2){
+        grid-area: top;
+    }
+    .container > div:nth-child(3){
+        grid-area: bottom;
+    }
+    .container > div:last-child{
+        grid-area: right;
+    }
+}
