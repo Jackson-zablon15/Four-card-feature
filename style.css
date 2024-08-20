@@ -42,12 +42,12 @@ main{
     gap: 0px;
     max-width: 18.4375rem;
     font-size: 18px;
-    margin-top: 4.2375rem;
+    margin-top: 4.1rem;
    color: var(--Grayish_Blue);
 }
 .second{
     color: var(--Very_Dark_Blue);
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 .header p:last-of-type{
@@ -96,11 +96,11 @@ img{
     .header{
         max-width: 31.625rem;
         font-size: 1.875rem;
-        margin-top: 5.5rem;     
+        margin-top: 5.3rem;     
         gap: 0.5rem;
     }
     .header p:last-of-type{
-        margin-top: 22px;
+        margin-top: 18px;
     }
     .container{
         display: grid;
